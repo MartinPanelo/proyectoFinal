@@ -328,8 +328,42 @@ input[type=checkbox] {
 
 
 
+.list-paginas{
+    
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+}
+.paginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(4, 120, 35); */
+    background: rgb(255, 255, 255);
+    border-radius: 10px; 
+   /*  width: 150px; */
+    height:35px;
+    margin-bottom:40px;
+   
+}
+.btn-pag{
+    border: none;
+    cursor:pointer;  
+    color:rgb(0, 0, 0);
+    background: transparent;
+   /*  background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%); */
+   /*  background:#619d13; */
+    border-radius: 100%;     
+    margin-inline:5px ;
+    height:70% ;
+   
 
-
+}
+.btn-pag:hover{
+    background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%);
+   /*  border-radius: 100%;  */
+}
 
 
 
