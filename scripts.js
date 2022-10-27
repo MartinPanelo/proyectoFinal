@@ -1,22 +1,22 @@
 init(); // establecer estado incial
 function init(){
-    document.getElementById("c").style.visibility = "hidden";
-    document.getElementById("l").style.visibility = "hidden";
+    document.getElementById("categ").style.visibility = "hidden";
+    document.getElementById("lista").style.visibility = "hidden";
 };
 
 
 function verFiltro(){
-    if(document.getElementById("c").style.visibility == "visible"){
-        document.getElementById("c").style.visibility = "hidden";
+    if(document.getElementById("categ").style.visibility == "visible"){
+        document.getElementById("categ").style.visibility = "hidden";
     }else{
-        document.getElementById("c").style.visibility = "visible"
+        document.getElementById("categ").style.visibility = "visible"
     };
 };
 
 function verFavoritos(){
-    if(document.getElementById("l").style.visibility == "visible"){
-        document.getElementById("l").style.visibility = "hidden";
+    if(document.getElementById("lista").style.visibility == "visible"){
+        document.getElementById("lista").style.visibility = "hidden";
     }else{
-        document.getElementById("l").style.visibility = "visible"
+        document.getElementById("lista").style.visibility = "visible"
     };
 };

@@ -24,6 +24,23 @@
     height:75%;
     padding-top:7px;
 }
+
+
+
+
+
+.banner{
+
+    width: 100%;
+    height: 200px;
+    background-color: rgb(167, 50, 50);
+   
+    
+   
+}
+
+
+
 /* BARRA DE HERRAMIENTAS */
 .navbar-herramientas{
     position: sticky;
@@ -35,6 +52,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+
+
 /* BARRA DE HERRAMIENTAS => BUSCAR */
 .buscar{
     display: flex;
@@ -103,7 +123,7 @@
 .filtros{
     width: 30%;
     height: 30px;
-    background: #619d13;
+   /*  background: #619d13; */
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -114,7 +134,7 @@
     height: 90%;
     background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%);
     border-radius: 5px; 
-    padding-inline:5px;
+    padding-inline:15px;
     display: flex;    
     align-items: center;  
     margin-left: 30px;
@@ -150,7 +170,7 @@ input[type=checkbox] {
 .favoritos{
     width: 30%;
     height: 30px;
-    background: #6f4e4e;
+  /*   background: #6f4e4e; */
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -219,19 +239,6 @@ input[type=checkbox] {
 
 
 
-.banner{
-
-    width: 100%;
-    height: 200px;
-    background-color: rgb(167, 50, 50);
-    
-    
-   
-}
-
-
-
-
 
 
 
@@ -274,13 +281,13 @@ input[type=checkbox] {
 }
 .item{
     background: rgb(78, 89, 111);
-    width: 30%;
+    width: 35%;
     
   /*   display: flex;
     align-items: center;
     flex-direction: column; */
     border-radius: 5px;
-    margin:30px;
+    margin:30px 0px 40px 0px;
     
 }
 .item-foto{
@@ -329,7 +336,6 @@ input[type=checkbox] {
 
 
 .list-paginas{
-    
     display: flex;
     justify-content: center;
     
@@ -340,17 +346,19 @@ input[type=checkbox] {
     justify-content: center;
     align-items: center;
     /* background: rgb(4, 120, 35); */
-    background: rgb(255, 255, 255);
+    background:  rgb(78, 89, 111);
+    
     border-radius: 10px; 
    /*  width: 150px; */
     height:35px;
-    margin-bottom:40px;
+    margin:10px 0px 60px 0px;
    
 }
 .btn-pag{
     border: none;
     cursor:pointer;  
-    color:rgb(0, 0, 0);
+   /*  color:rgb(255, 255, 255); */
+
     background: transparent;
    /*  background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%); */
    /*  background:#619d13; */
@@ -379,10 +387,14 @@ input[type=checkbox] {
 .pie{
 
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     background-color: rgb(50, 167, 85);
     display: flex;
-    
+    flex-direction: column;
+
+}
+.cont-siga{
+    display: flex;
 
 }
 .siganos{
@@ -397,7 +409,6 @@ input[type=checkbox] {
    width: 150px;
    margin-top: 20px;
 }
-
 .item-link a i{
     margin-right: 30px;
 }
@@ -408,8 +419,35 @@ input[type=checkbox] {
     text-decoration:none;
     /* margin-right:15px; */
 }
+
+
+
 .contactenos{
+    display: flex;
+    justify-content: center;
     width: 50%;
-   
-    background-color: rgb(72, 150, 217);
+    background-color: rgb(233, 29, 29);
+    
+}
+.box-contactenos{
+    
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding:10px 40px 10px 40px;
+    /* width: 50%; */
+    background-color: rgb(34, 36, 42);
+    border-radius: 5px;
+}
+
+
+.terminos{
+    background-color: rgb(137, 185, 86);
+}
+
+
+
+
+.derechos{
+    background-color: rgb(157, 50, 167);
 }
