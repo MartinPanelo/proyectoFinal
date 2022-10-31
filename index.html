@@ -66,13 +66,21 @@
 
     <div class="area-items">
         
-        <div class="navbar-herramientas">
+        <div class="navbar-herramientas" id="barra">
 
+            <div class="logo-2" id="logo-2"> 
+                <div class="navbar-logo-2">
+                    <img src="./assets/LogoL.png">
+                    <p>L</p>
+                    <img src="./assets/LogoR.png">
+                </div>
+            </div>
 
             <div class="buscar">
                 <input maxlength="20"></input>
                 <button class="boton" href="#">Buscar</button>
             </div>
+
     
             <div class="filtros">
                     <button onclick="verFiltro()">Filtros</button>
@@ -98,6 +106,11 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
 
         <div class="fila-item">
             <div class="item">
@@ -231,7 +244,8 @@
                         <input>
                     </div>
                     <div class="mensaje">
-                        <textarea></textarea>
+                        <textarea oninput='this.style.height = "" ;
+                        this.style.height = this.scrollHeight + "px"'></textarea>
                     </div>
                     <div class="btn-enviar">
                         <button>Enviar</button>
@@ -239,6 +253,8 @@
 
                 </div>
             </div>
+            
+         
         </div>
 
 
@@ -285,10 +301,12 @@
 
     <div class="terminos">
         <hr>
-       
-        <a href="#">Terminos y condiciones</a>
-        <a href="#">Sobre nosotros</a>
-        <a href="#">Politicas de privacidad</a>
+        <div class="links">
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Politicas de privacidad</a>
+        </div>
+        
     </div>
   
 
@@ -307,6 +325,7 @@
      <div class="derechos">
 
         <p>© 2022,Luxory.inc , Todos los derechos reservados.</p>
+
      </div>
      
 
@@ -323,8 +342,8 @@
        
     </div>
 
-    <div class="top">
-        <button>#</button>
+    <div class="btn-top">
+        <button onclick="iratop()">#</button>
     </div>
 
 <script src="./scripts.js"></script>

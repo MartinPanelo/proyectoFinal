@@ -2,6 +2,7 @@ init(); // establecer estado incial
 function init(){
     document.getElementById("categ").style.visibility = "hidden";
     document.getElementById("lista").style.visibility = "hidden";
+    document.getElementById("logo-2").style.display = "none";
 };
 
 
@@ -20,3 +21,26 @@ function verFavoritos(){
         document.getElementById("lista").style.visibility = "visible"
     };
 };
+
+
+
+function iratop ()  {
+    document.body.scrollIntoView({
+        behavior: "smooth",
+      });
+  };
+
+
+
+
+
+addEventListener("scroll",function(){
+    barra = document.getElementById("barra");
+    
+    if(barra.offsetTop != 270){
+        
+        document.getElementById("logo-2").style.display = "block";
+    }else{
+        document.getElementById("logo-2").style.display = "none";
+    }
+})
