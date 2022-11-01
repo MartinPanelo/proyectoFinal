@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <div class="navbar-logo">
+    <div class="navbar-logo sombrastilo1">
         <img src="./assets/LogoL.png">
         <p>Luxory</p>
         <img src="./assets/LogoR.png">
@@ -32,7 +32,7 @@
 
 
     
-    <div class="banner">
+    <div class="banner sombrastilo2">
        
         <div> ACA VA UN HERMOSO CARRUSEL BANNER</div>
     </div>
@@ -66,7 +66,7 @@
 
     <div class="area-items">
         
-        <div class="navbar-herramientas" id="barra">
+        <div class="navbar-herramientas sombrastilo1" id="barra">
 
             <div class="logo-2" id="logo-2"> 
                 <div class="navbar-logo-2">
@@ -77,28 +77,30 @@
             </div>
 
             <div class="buscar">
-                <input maxlength="20"></input>
+                <input class="sombrastilo1" maxlength="20"></input>
                 <button class="boton" href="#">Buscar</button>
             </div>
 
     
             <div class="filtros">
-                    <button onclick="verFiltro()">Filtros</button>
-    
-                    <div class=" categorias" id="categ">
+                    <button class="sombrastilo1" onclick="verFiltro()">Filtros</button>   
+                    <div class=" categorias sombrastilo1" id="categ">
                         <div class="items">
                             <div><input type="checkbox">opcion-1</div>                    
                             <div><input type="checkbox">opcion-2</div>
                             <div><input type="checkbox">opcion-3</div>      
                         </div>            
-                    </div>    
+                    </div>             
              </div>
              
-            <div class="favoritos">
-                <button onclick="verFavoritos()">favoritos <div class="cant">2</div></button>
+            
+            
+            
+            <div class="favoritos ">
+                <button class="sombrastilo1" onclick="verFavoritos()">favoritos <div class="cant">2</div></button>
     
-                <div class=" listado" id="lista">
-                    <div class="list">
+                <div class=" listado sombrastilo1" id="lista">
+                    <div class="list ">
                         <div>opcion-1 <a href="#">ver</a></div>                    
                         <div>opcion-2 <a href="#">ver</a></div>
                         <div>opcion-3 <a href="#">ver</a></div>      
@@ -113,7 +115,7 @@
 
 
         <div class="fila-item">
-            <div class="item">
+            <div class="item sombrastilo1">
                 <div class="item-foto">                    
                     <img src="https://loremflickr.com/300/150/car" />
                 </div>
@@ -128,7 +130,7 @@
                     <button class="btn-ver">ver</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item sombrastilo1">
                 <div class="item-foto">                    
                     <img src="https://loremflickr.com/300/150/car" />
                 </div>
@@ -145,7 +147,7 @@
             </div>
         </div>
         <div class="fila-item">
-            <div class="item">
+            <div class="item sombrastilo1">
                 <div class="item-foto">                    
                     <img src="https://loremflickr.com/300/150/car" />
                 </div>
@@ -160,7 +162,7 @@
                     <button class="btn-ver">ver</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item sombrastilo1">
                 <div class="item-foto">                    
                     <img src="https://loremflickr.com/300/150/car" />
                 </div>
@@ -185,8 +187,8 @@
 
 
 
-        <div class="list-paginas">
-            <div class="paginas"> 
+        <div class="list-paginas ">
+            <div class="paginas sombrastilo1"> 
                 <button class="btn-pag"> < </button>
                 <button class="btn-pag"> 1 </button>
                 <button class="btn-pag"> 2 </button>
@@ -233,22 +235,22 @@
 
 
         <div class="cont-siga">
-        <div class="contactenos">
-            <div class="box-contactenos">
+        <div class="contactenos ">
+            <div class="box-contactenos sombrastilo1">
                 <p>contactenos</p>
                 <div class="campos-formularios">
-                    <div class="nombre">
-                        <input>
+                    <div class="nombre ">
+                        <input class="sombrastilo1">
                     </div>
                     <div class="correo">
-                        <input>
+                        <input class="sombrastilo1">
                     </div>
                     <div class="mensaje">
-                        <textarea oninput='this.style.height = "" ;
+                        <textarea class="sombrastilo1" oninput='this.style.height = "" ;
                         this.style.height = this.scrollHeight + "px"'></textarea>
                     </div>
-                    <div class="btn-enviar">
-                        <button>Enviar</button>
+                    <div class="btn-enviar ">
+                        <button class="sombrastilo1">Enviar</button>
                     </div>
 
                 </div>
@@ -267,7 +269,7 @@
 
 
 
-        <div class="siganos">
+        <div class="siganos ">
             <p>Siganos</p>
             <div class="items-siganos">
                 <div class="item-link"><a href="#"><i class="fa-brands fa-facebook fa-2x"></i><spam>Facebook</spam></a></div>
@@ -279,7 +281,7 @@
                 <div class="item-link"><a href="#"><i class="fa-brands fa-github fa-2x"></i><spam>Github</spam></a></div>
             </div>
             <div class="subcribir">
-                <input>
+                <input class="sombrastilo1">
                 <button>Enviar</button>
             </div>
         </div>
@@ -299,7 +301,7 @@
 
 
 
-    <div class="terminos">
+    <div class="terminos ">
         <hr>
         <div class="links">
             <a href="#">Terminos y condiciones</a>
@@ -342,8 +344,8 @@
        
     </div>
 
-    <div class="btn-top">
-        <button onclick="iratop()">#</button>
+    <div class="btn-top" id="btnT">
+        <button  onclick="iratop()">🡹</button>
     </div>
 
 <script src="./scripts.js"></script>

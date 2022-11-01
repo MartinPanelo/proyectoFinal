@@ -1,24 +1,30 @@
+barra = document.getElementById("barra");
+btnT  = document.getElementById("btnT");
+catalogo = document.getElementById("categ");
+lista = document.getElementById("lista");
+logo2 = document.getElementById("logo-2");
 init(); // establecer estado incial
 function init(){
-    document.getElementById("categ").style.visibility = "hidden";
-    document.getElementById("lista").style.visibility = "hidden";
-    document.getElementById("logo-2").style.display = "none";
+    catalogo.style.visibility = "hidden";
+    lista.style.visibility = "hidden";
+    logo2.style.display = "none";
+    btnT.style.display = "none";
 };
 
 
 function verFiltro(){
-    if(document.getElementById("categ").style.visibility == "visible"){
-        document.getElementById("categ").style.visibility = "hidden";
+    if(catalogo.style.visibility == "visible"){
+        catalogo.style.visibility = "hidden";
     }else{
-        document.getElementById("categ").style.visibility = "visible"
+        catalogo.style.visibility = "visible"
     };
 };
 
 function verFavoritos(){
-    if(document.getElementById("lista").style.visibility == "visible"){
-        document.getElementById("lista").style.visibility = "hidden";
+    if(lista.style.visibility == "visible"){
+        lista.style.visibility = "hidden";
     }else{
-        document.getElementById("lista").style.visibility = "visible"
+        lista.style.visibility = "visible"
     };
 };
 
@@ -35,12 +41,21 @@ function iratop ()  {
 
 
 addEventListener("scroll",function(){
-    barra = document.getElementById("barra");
-    
+   
+    console.log(barra.offsetTop);
+    if(barra.offsetTop > 500){
+        
+        btnT.style.display = "block";
+    }else{
+        btnT.style.display = "none";
+    }
+
+
+
     if(barra.offsetTop != 270){
         
-        document.getElementById("logo-2").style.display = "block";
+        logo2.style.display = "block";
     }else{
-        document.getElementById("logo-2").style.display = "none";
+        logo2.style.display = "none";
     }
 })

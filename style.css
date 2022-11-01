@@ -1,7 +1,20 @@
 *{
     margin: 0;
     color: white;    
+   
 }
+body {
+    background-color: rgb(39, 42, 49);
+ }
+
+.sombrastilo1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.sombrastilo2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+
+
+
 /* NAVBAR */
 .navbar-logo{
     display:flex;
@@ -58,6 +71,7 @@
     width: 100%;
     height: 200px;
     background-color: rgb(167, 50, 50);
+  /*   z-index: ; */
    
     
    
@@ -169,7 +183,7 @@
     background: #fff;
     border-radius: 5px;  
     margin-top: 110px;
-    margin-left: -77px;
+    margin-left: -82px;
     padding:10px 15px;
     background-color:  rgb(78, 89, 111);
 }
@@ -293,7 +307,7 @@ input[type=checkbox] {
 
     width: 100%;
    /*  height: 200px; */
-    background-color: rgb(167, 50, 146);
+   /*  background-color: rgb(167, 50, 146); */
     /* display: flex;
     
     justify-content: space-around; */
@@ -412,18 +426,25 @@ input[type=checkbox] {
 
     width: 100%;
     /* height: 200px; */
-    background-color: rgb(50, 167, 85);
+   /*  background-color: rgb(50, 167, 85); */
     display: flex;
     flex-direction: column;
 
+
+
+/*     background: linear-gradient(90deg, rgb(29, 173, 221) 50%, transparent 50%);
+ */  /*   background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%); */
+
+ background: linear-gradient(15deg, #FE5E3C 50%, transparent 50%);
 }
 .cont-siga{
     display: flex;
 
 }
 .siganos{
-    width: 50%;    
-    background-color: rgb(103, 50, 167);
+/*     background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%);
+ */    width: 50%;    
+  /*   background-color: rgb(103, 50, 167); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,7 +452,7 @@ input[type=checkbox] {
 .items-siganos{
     
    width: 150px;
-   margin-top: 20px;
+   margin-top: 15px;
 }
 .item-link a i{
     margin-right: 30px;
@@ -448,7 +469,7 @@ input[type=checkbox] {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin-top: 20px;
 
     width: 30%;
     height: 30px;
@@ -533,7 +554,7 @@ input[type=checkbox] {
     display: flex;
     justify-content:center;
     width: 50%;
-    background-color: rgb(233, 29, 29);
+   /*  background-color: rgb(233, 29, 29); */
     
 }
 .box-contactenos{
@@ -661,11 +682,13 @@ input[type=checkbox] {
 
 
 .terminos{
-    background-color: rgb(137, 185, 86);
+  /*   background-color: rgb(137, 185, 86); */
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 0px 15px 0px;
+   
 }
 .terminos hr {
     
@@ -692,7 +715,9 @@ input[type=checkbox] {
 
 .links a{
     text-decoration: none;
-    margin-inline:0px;
+    margin-inline:80px;
+    color:rgb(0, 0, 0);
+   
 }
 
 
@@ -720,7 +745,7 @@ input[type=checkbox] {
 
 
 .derechos{
-    background-color: rgb(157, 50, 167);
+    background-color: rgb(47, 47, 47);
     text-align: center;
     
     padding: 5px 0px 5px 0px;
@@ -740,6 +765,11 @@ input[type=checkbox] {
     position: fixed;
     right: 15px;
     bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
    /*  display: none; */
+   background: linear-gradient(90deg, #FE5E3C 0%, #FE713C 100%);
   
 }
