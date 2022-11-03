@@ -12,7 +12,7 @@ function init(){
     lista.style.visibility = "hidden";
     logo2.style.display = "none";
     btnT.style.display = "none";
-    imgC.src = "./../assets/carrusel/"+ imgCarrusel[i] + ".jpg";
+    imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     myTimer = setInterval(cambiarimg, 5000);
  /*    cambiarimg(); */
    
