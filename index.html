@@ -5,7 +5,10 @@
     <script src="https://kit.fontawesome.com/fc73908a79.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +35,9 @@
 
 
     
-    <div class="banner sombrastilo2">
+    <div class="banner">
        
-        <div class="contenedorimg">
+        <div class="contenedorimg ">
             <button class="btnl" onclick="pasarfoto(-1)">❮</button>
             <img id="idCarrusel" class="sombrastilo1">
             <button class="btnr"  onclick="pasarfoto(1)">❯</button>
@@ -70,18 +73,18 @@
 
     <div class="area-items">
         
-        <div class="navbar-herramientas sombrastilo1" id="barra">
+        <div class="navbar-herramientas sombrastilo2" id="barra">
 
             <div class="logo-2" id="logo-2"> 
                 <div class="navbar-logo-2">
                     <img src="./assets/LogoL.png">
-                    <p>L</p>
+                    <p>Luxory</p>
                     <img src="./assets/LogoR.png">
                 </div>
             </div>
 
             <div class="buscar">
-                <input class="sombrastilo1" maxlength="20"></input>
+                <input class="sombrastilo1" placeholder="Buscar por modelos,color,etc." maxlength="20"></input>
                 <button class="boton" href="#">Buscar</button>
             </div>
 
@@ -130,8 +133,8 @@
                           be always 100% and no whitespace after the text block is allowed.</p>
                 </div>
                 <div class="item-opciones">
-                    <button>Agregar a favoritos</button>
-                    <button class="btn-ver">ver</button>
+                    <button class="sombrastilo1">Agregar a favoritos</button>
+                    <button class="btn-ver sombrastilo1">ver</button>
                 </div>
             </div>
             <div class="item sombrastilo1">
@@ -145,8 +148,8 @@
                           be always 100% and no whitespace after the text block is allowed.</p>
                 </div>
                 <div class="item-opciones">
-                    <button>Agregar a favoritos</button>
-                    <button class="btn-ver">ver</button>
+                    <button class="sombrastilo1">Agregar a favoritos</button>
+                    <button class="btn-ver sombrastilo1">ver</button>
                 </div>
             </div>
         </div>
@@ -162,8 +165,8 @@
                           be always 100% and no whitespace after the text block is allowed.</p>
                 </div>
                 <div class="item-opciones">
-                    <button>Agregar a favoritos</button>
-                    <button class="btn-ver">ver</button>
+                    <button class="sombrastilo1">Agregar a favoritos</button>
+                    <button class="btn-ver sombrastilo1">ver</button>
                 </div>
             </div>
             <div class="item sombrastilo1">
@@ -177,8 +180,8 @@
                           be always 100% and no whitespace after the text block is allowed.</p>
                 </div>
                 <div class="item-opciones">
-                    <button>Agregar a favoritos</button>
-                    <button class="btn-ver">ver</button>
+                    <button class="sombrastilo1">Agregar a favoritos</button>
+                    <button class="btn-ver sombrastilo1">ver</button>
                 </div>
             </div>
         </div>
@@ -244,13 +247,13 @@
                 <p>contactenos</p>
                 <div class="campos-formularios">
                     <div class="nombre ">
-                        <input class="sombrastilo1">
+                        <input placeholder="Nombre y Apellido" class="sombrastilo1">
                     </div>
                     <div class="correo">
-                        <input class="sombrastilo1">
+                        <input placeholder="Direccion de correo" class="sombrastilo1">
                     </div>
                     <div class="mensaje">
-                        <textarea class="sombrastilo1" oninput='this.style.height = "" ;
+                        <textarea placeholder="Comentenos!!" class="sombrastilo1" oninput='this.style.height = "" ;
                         this.style.height = this.scrollHeight + "px"'></textarea>
                     </div>
                     <div class="btn-enviar ">
@@ -285,7 +288,7 @@
                 <div class="item-link"><a href="#"><i class="fa-brands fa-github fa-2x"></i><spam>Github</spam></a></div>
             </div>
             <div class="subcribir">
-                <input class="sombrastilo1">
+                <input placeholder="Suscribase al boletin" class="sombrastilo1">
                 <button>Enviar</button>
             </div>
         </div>

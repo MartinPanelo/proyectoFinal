@@ -72,19 +72,11 @@ function iratop ()  {
 addEventListener("scroll",function(){
     
     console.log(barra.offsetTop);
-    if(barra.offsetTop > 500){
-        
+    if(barra.offsetTop > 640){
         btnT.style.display = "block";
-    }else{
-        btnT.style.display = "none";
-    }
-
-
-
-    if(barra.offsetTop != 270){
-        
         logo2.style.display = "block";
     }else{
+        btnT.style.display = "none";
         logo2.style.display = "none";
     }
-})
+});
