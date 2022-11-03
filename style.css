@@ -252,8 +252,8 @@ body {
 .categorias{
     background: #fff;
     border-radius: 5px;  
-    margin-top: 110px;
-    margin-left: -82px;
+    margin-top: 125px;
+    margin-left: -95px;
     padding:10px 15px;
     background-color:  rgb(78, 89, 111);
 }
@@ -308,13 +308,14 @@ input[type=checkbox] {
 .listado{
     background: #fff;
     border-radius: 5px;  
-    margin-top: 125px;
-    margin-left: -103px;
+    margin-top: 145px;
+    margin-left: -120px;
     padding:5px 10px 0px 10px;
     background-color:  rgb(78, 89, 111);
 }
 .list div{
-
+    display: flex;
+    justify-content: space-between;
     margin-bottom:10px;
 }
 .list div a{
