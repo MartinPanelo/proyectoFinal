@@ -38,14 +38,14 @@ function cambiarimg(direccion = 1){
     i += direccion;
     console.log(i);
     if(i < imgCarrusel.length){
-        imgC.src = "./../assets/carrusel/"+ imgCarrusel[i] + ".jpg";
+        imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     }else{
         i = 0;
-        imgC.src = "./../assets/carrusel/"+ imgCarrusel[i] + ".jpg";
+        imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     }
     if(i == -1){
         i = (imgCarrusel.length-1);
-        imgC.src = "./../assets/carrusel/"+ imgCarrusel[i] + ".jpg";
+        imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     }
    
 }
