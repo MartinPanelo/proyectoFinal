@@ -90,7 +90,7 @@ function formSuscribase(){
     let inputSuscribase = document.getElementById("iSuscribase");
    
 
-    if(inputSuscribase.value.match("[a-zA-Z0-9]+\@{1}[a-zA-Z]{3,6}\.[a-zA-Z]{2,3}")){
+    if(inputSuscribase.value.match("[a-zA-Z0-9]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,3}")){
         console.log("es valido");
         console.log(inputSuscribase.value);
     }else{
