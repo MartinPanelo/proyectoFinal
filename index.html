@@ -201,12 +201,15 @@
               </a>
             </div>
           </div>
-          <form>
+
+          <form onsubmit="return formSuscribase()">
             <div class="subcribir">
-              <input id="iSuscribase" placeholder="Suscribase al boletin" class="sombrastilo1" />
-              <button type="button" onclick="formSuscribase()">Enviar</button>
+              <input type="text" id="iSuscribase" placeholder="Suscribase al boletin" class="sombrastilo1"/>
+              <button type="submit">Enviar</button>
+            </div>
           </form>
-          </div>
+
+          <p id="mensaje"></p>
         </div>
       </div>
 

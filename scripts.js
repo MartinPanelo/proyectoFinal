@@ -4,6 +4,7 @@ catalogo = document.getElementById("categ");
 lista = document.getElementById("lista");
 logo2 = document.getElementById("logo-2");
 imgC =  document.getElementById("idCarrusel");
+msj = document.getElementById("mensaje");
 let imgCarrusel = ["img1","img2","img3"];
 let i = 0;
 init(); // establecer estado incial
@@ -90,13 +91,15 @@ function formSuscribase(){
     let inputSuscribase = document.getElementById("iSuscribase");
    
 
-    if(inputSuscribase.value.match("[a-zA-Z0-9]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,3}")){
+    if(inputSuscribase.value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,3}")){
         console.log("es valido");
+        msj.innerHTML= "es valido";
         console.log(inputSuscribase.value);
     }else{
         console.log("NO es valido");
+        msj.innerHTML = "NO es valido";
         console.log(inputSuscribase.value);
 
     }
-
+    return false;
 }
