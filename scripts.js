@@ -5,14 +5,19 @@ lista = document.getElementById("lista");
 logo2 = document.getElementById("logo-2");
 imgC =  document.getElementById("idCarrusel");
 msj = document.getElementById("mensaje");
-let imgCarrusel = ["img1","img2","img3"];
+finfo = document.getElementById("idinfo");
+listcorreos = document.getElementById("listcorreos");
+
+let imgCarrusel = ["img1","img2","img3","img4"];
 let i = 0;
 init(); // establecer estado incial
 function init(){
+    
     catalogo.style.visibility = "hidden";
     lista.style.visibility = "hidden";
     logo2.style.display = "none";
     btnT.style.display = "none";
+    finfo.style.display = "none";
     imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     myTimer = setInterval(cambiarimg, 5000);
  /*    cambiarimg(); */
@@ -38,7 +43,7 @@ cambiarimg(direccion);
 function cambiarimg(direccion = 1){   
     i += direccion;
     console.log(i);
-    if(i < imgCarrusel.length){
+/*     if(i < imgCarrusel.length){
         imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
     }else{
         i = 0;
@@ -47,8 +52,14 @@ function cambiarimg(direccion = 1){
     if(i == -1){
         i = (imgCarrusel.length-1);
         imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
+    } */
+    if(i == imgCarrusel.length){
+        i = 0;
     }
-   
+    if(i == -1){
+        i = (imgCarrusel.length-1);
+    }
+    imgC.src = "assets/carrusel/"+ imgCarrusel[i] + ".jpg";
 }
 
 function verFiltro(){
@@ -90,16 +101,103 @@ addEventListener("scroll",function(){
 function formSuscribase(){
     let inputSuscribase = document.getElementById("iSuscribase");
    
-
-    if(inputSuscribase.value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,3}")){
+    inputSuscribase.classList.remove("error");
+    inputSuscribase.classList.remove("valido");
+    if(inputSuscribase.value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,4}")){
         console.log("es valido");
         msj.innerHTML= "es valido";
+        let item = document.createElement("li");
+        item.innerText = inputSuscribase.value;
+        listcorreos.appendChild(item);
         console.log(inputSuscribase.value);
+        inputSuscribase.classList.add("valido");
+       
     }else{
         console.log("NO es valido");
         msj.innerHTML = "NO es valido";
+        inputSuscribase.classList.add("error");
         console.log(inputSuscribase.value);
+       
 
     }
+ //   console.log("me ejecute");
     return false;
 }
+
+function formContactenos(){
+    let formContactenos = document.forms["formcontactenos"];
+    let tabla = document.getElementById("tabla");
+    let banderin = true;
+    for(let i=0; i<3;i++){
+        formContactenos[i].classList.remove("error");
+        formContactenos[i].classList.remove("valido");
+    }
+  
+    console.log(formContactenos.elements);
+   
+    if(!formContactenos[0].value.match("[a-zA-Z ]{3,25}")){
+        banderin = false;
+        formContactenos[0].classList.add("error");
+    }else{
+        formContactenos[0].classList.add("valido");
+    };
+
+    if(!formContactenos[1].value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,4}")){
+        banderin = false;
+        formContactenos[1].classList.add("error");
+    }else{
+        formContactenos[1].classList.add("valido");
+    };
+    if(!formContactenos[2].value.match("[a-zA-Z0-9-_]{3,200}")){
+        banderin = false;
+        console.log("el msj esta mal")
+        formContactenos[2].classList.add("error");
+    }else{
+        console.log("el msj esta bien")
+        formContactenos[2].classList.add("valido");
+    };
+
+    if(banderin){
+        let tbody = document.createElement("tbody");
+        let item = document.createElement("tr");
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+    
+        col1.innerText = formContactenos[0].value;
+        col2.innerText = formContactenos[1].value;
+        col3.innerText = formContactenos[2].value;
+    
+        console.log(col1);
+    
+        item.appendChild(col1);
+        item.appendChild(col2);
+        item.appendChild(col3);
+    
+        tbody.appendChild(item);
+    
+        tabla.appendChild(tbody); 
+    }
+   
+
+    
+
+    return false;
+}
+
+
+
+
+function mostarDatos(msj){
+    if(finfo.style.display == "block"){
+        finfo.style.display = "none"
+        console.log("no se ve")
+    }else{
+        console.log("se ve")
+        finfo.style.display = "block";
+    }
+    
+}
+
+
+

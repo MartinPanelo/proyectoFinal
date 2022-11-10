@@ -154,24 +154,37 @@
         <div class="contactenos">
           <div class="box-contactenos sombrastilo1">
             <p>contactenos</p>
+
+
+            <form name="formcontactenos" onsubmit="return formContactenos()"  autocomplete="off">
             <div class="campos-formularios">
-              <div class="nombre">
-                <input placeholder="Nombre y Apellido" class="sombrastilo1" />
+              <div class="nombre sombrastilo1">               
+                <input placeholder="Nombre y Apellido" />
+
+               
+                
               </div>
-              <div class="correo">
-                <input placeholder="Direccion de correo" class="sombrastilo1" />
+              
+              <div class="correo sombrastilo1">
+                <input placeholder="Direccion de correo" />
               </div>
-              <div class="mensaje">
-                <textarea
-                  placeholder="Comentenos!!"
-                  class="sombrastilo1"
-                  oninput='this.style.height = "" ;
-                        this.style.height = this.scrollHeight + "px"'></textarea>
-              </div>
+              <div class="mensaje sombrastilo1">
+                
+              
+                  <textarea placeholder="Comentenos!!" oninput='this.style.height = ""
+                  this.style.height = this.scrollHeight + "px"'></textarea>
+                </div>
+               <!--  -->
+           
+
               <div class="btn-enviar">
-                <button class="sombrastilo1">Enviar</button>
+                <button type="submit" class="sombrastilo1">Enviar</button>
               </div>
             </div>
+          </form>
+
+
+
           </div>
         </div>
 
@@ -202,9 +215,9 @@
             </div>
           </div>
 
-          <form onsubmit="return formSuscribase()">
-            <div class="subcribir">
-              <input type="text" id="iSuscribase" placeholder="Suscribase al boletin" class="sombrastilo1"/>
+          <form onsubmit="return formSuscribase()" autocomplete="off">
+            <div class="subcribir sombrastilo1">
+              <input type="text" id="iSuscribase" placeholder="Suscribase al boletin" />
               <button type="submit">Enviar</button>
             </div>
           </form>
@@ -225,11 +238,39 @@
       <div class="derechos">
         <p>© 2022,Luxory.inc , Todos los derechos reservados.</p>
       </div>
+      
+    <div class="envios">
+      <button class="" onclick="mostarDatos()">Envios</button>
+    </div>
+
+
     </div>
 
     <div class="btn-top" id="btnT">
       <button onclick="iratop()">🡹</button>
     </div>
+
+
+     
+    <div class="info" id="idinfo">
+      <P>Lista de correos inscritos</P>
+      <ul id="listcorreos">
+
+      </ul>
+      <hr>
+      <table id="tabla">
+        <caption>Lista de "Contantenos"</caption><!-- ver como armar la estructura -->
+        <tr>
+          <td>Nombre</td>
+          <td>Correo</td>
+          <td>Mensaje</td>
+        </tr>
+      </table>
+     
+      
+    
+    </div>
+
 
     <script src="./scripts.js"></script>
   </body>
