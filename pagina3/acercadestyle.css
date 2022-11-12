@@ -2,10 +2,12 @@
   margin: 0;
   color: white;
   font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+ /*  line-height : 27px; */
 }
 body {
   background: linear-gradient(180deg, #462446 0%, #b05f6d 25%, #eb6b56 50%, #ffc153 75%, #47b39d 100%);
-    height: 100vh;
+   /*  height: 100vh; */
 }
 
 .sombrastilo1 {
@@ -38,35 +40,63 @@ body {
   padding-top: 7px;
 }
 
-.ruedaR {
-  float: right;
-}
-.ruedaL {
-  float: left;
-}
+
+
 .rueda img {
+  float: left;
   /*   height: 200px;
   width: 200px; */
-  border-radius: 50%;
+ /*  border-radius: 100%; */
   /*  background-color: #7db9e8; */
   /*   margin: 0 25px 5px 0; */
   shape-image-threshold: 0;
   -webkit-shape-outside: circle();
   shape-outside: circle();
-  width: 300px;
+  width: 450px;
   height: 100%;
+  margin-top: 30px;
 }
+
+
 .circle {
-  width: 300px;
-  /* height: 50%; */
-  /*  border-radius: 50%; */
-  /*   background-color: #7db9e8; */
- /*  margin: 40px 0px 40px 0px;
- */
+  width: 450px; 
   -webkit-shape-outside: circle();
   shape-outside: circle();
 }
+
+.introduccion{
+  
+  margin-top:50px;
+}
+.introduccion p {
+  margin-right:30px;
+ 
+}
+
+
 .art1{
-    clear: both;
-   /*  */
+  margin: 100px;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.art2{
+  
+  margin: 100px;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.volver{
+  cursor: pointer;
+  text-decoration: none;
+  background-color:#8457bb;
+  border-radius: 5px;
+  padding:5px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
 }

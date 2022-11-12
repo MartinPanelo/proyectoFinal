@@ -297,6 +297,7 @@ input[type="checkbox"] {
   justify-content: space-evenly;
 }
 .item {
+  display: flex;
   background: rgb(78, 89, 111);
   width: 35%;
 
@@ -305,6 +306,8 @@ input[type="checkbox"] {
     flex-direction: column; */
   border-radius: 5px;
   margin: 30px 0px 40px 0px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .item-foto {
   width: 100%;

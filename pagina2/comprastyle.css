@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  /*  color: white; */
+  /*  font-family: "Permanent Marker", cursive; */
+}
+/*   body {
+    background-color: rgb(39, 42, 49);
+  } */
+
+.sombrastilo1 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* NAVBAR */
+.navbar-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(34, 36, 42);
+}
+.navbar-logo p {
+  font-family: "Alkalami", serif;
+  font-size: 45px;
+  height: 100%;
+  background: -webkit-linear-gradient(#a96f44, #f2ecb6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-logo img {
+  height: 75%;
+  padding-top: 7px;
+}
+
+.vista{
+    display:flex;
+    justify-content: center;
+    background-color:green;
+}
+.vista3d{
+ /*    width: 500px;
+    height: 500px; */
+    background-color:blue;
+    
+}
+model-viewer{
+    width: 100px;
+    height: 100px;
+}
+
+.descripcion{
+    
+    display: flex;
+    width: 100%;
+   
+   /*  height: 100px; */
+    background-color:rgb(213, 80, 80);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    background-color:violet;
+
+    position: absolute;
+    top: 5px;
+    left: 50px;
+
+
+  white-space: nowrap;
+    /* margin: 30px -100px 50px 0px; */
+   /*  padding-left: 100px; */
+}
+.ladol{
+    position:relative;
+    width: 30%;
+    padding-top: 70px;
+  /*   height: 100%; */
+    background-color:rgb(177, 255, 183);
+}
+.items{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.items button{
+    margin: 0px 0px 15px 0px;
+    
+/*     border: none;
+outline: none;
+background: none; */
+}
+.items hr{
+    margin: 0px 0px 15px 0px;
+    width: 50%;
+   
+}
+.lador{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+   /*  height: 100%; */
+   /*  background-color:rgb(124, 80, 213); */
+}
+.lador img{
+    width: 100%;
+    height: 100%;
+}
+
+.foto{
+    background-color:rgb(213, 208, 80);
+    width: 400px;
+    height: 200px;
+}
+.texto{
+    background-color:rgb(80, 213, 197);
+    width: 100px;
+    margin: 10px 0px 10px 0px;
+   /*  height: 50px; */
+}
+
+.formulariodepago{
+    background-color:rgb(255, 0, 230);
+  
+}
+.partea{
+    background-color:darkorange;
+   /*  width: 100%; */
+  /*   margin: 25px;
+    padding: 20px; */
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.parteb{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* .na{
+    display: flex;
+    justify-content: space-around;
+}
+.ft{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+
+.tarjeta{
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 360px;
+  height: 200px;
+  border-radius:15px;
+  background-color:thistle
+}
+
+.cabecera{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}

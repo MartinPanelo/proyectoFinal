@@ -1,12 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/pagina2/comprastyle.css" />
+    <script src="https://kit.fontawesome.com/fc73908a79.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Area de Compra</title>
 </head>
 <body>
-    pagina de compra
+
+    <div class="navbar-logo sombrastilo1">
+        <img src="/assets/LogoL.png" />
+        <p>Luxory</p>
+        <img src="/assets/LogoR.png" />
+      </div>
+  
+
+   <!-- Import the component -->
+
+
+<!-- Use it like any other HTML element --><!-- 
+<model-viewer alt="" src="/assets/pagina2/model.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
+ -->
+
+ <div class="vista">
+    <div class="vista3d">
+        <model-viewer alt="" src="/assets/pagina2/b.glb" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
+    </div>
+ </div>
+
+ <div class="descripcion">
+    <div class="ladol">
+        <div class="titulo">
+            
+            <h2> Una declaración de deportividad.
+                El fiun fium.</h2>
+        </div>
+        <div class="items">
+            <button>Motor</button>     
+            <hr>       
+            <button>Interior</button>
+            <hr>   
+            <button>Exterior</button>
+            <hr>   
+            <button>Equipamiento</button>
+        </div>
+        <ul>
+           
+        </ul>
+    </div>
+    <div class="lador">
+       <div class="foto">
+            <img src="/assets/pagina2/a.jpg">
+       </div>
+       <div class="texto">
+        <p>
+            Describo algo
+        </p>
+       </div>
+    </div>
+ </div>
+
+
+<div class="formulariodepago">
+ <form class="">
+<div class="partea">
+   
+    <div class="ladoizq">
+            <div class="">
+                <label>Nombre</label><br>
+                <input type="text">
+            </div>
+            <div class="">
+                <label>Fecha de nacimiento</label><br>
+                <input type="date" max="2099-12-31" min="1899-12-31" >
+            </div>
+            <div> 
+                <label>Pais</label>
+                <select id="pais" name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Narnia">Narnia</option>
+                    <option value="Loompaland">Loompaland</option>
+                    <option value="Krakozhia">Krakozhia</option>
+                </select>
+            </div>
+            <div class="">
+                <label>Ciudad</label>
+                <select id="ciudad" name="ciudad">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+
+    </div>
+
+
+
+    <!--     <div>
+            <div class="">
+                <label>Apellido</label><br>
+                <input type="text">
+            </div> -->
+        
+    <div class="ladoder">
+            <div class="">
+                <label>Apellido</label><br>
+                <input type="text">
+            </div>
+            <div class="">
+                <label>Nro de telefono</label><br>
+                <input type="text">
+            </div>
+            <div class="">
+                <p>Version</p>
+                <input type="radio"name="version" >Sport
+                <input type="radio"name="version" >Lite
+                <input type="radio"name="version" >Confort
+            </div>
+           
+    </div>
+
+
+    </div>
+    <div class="parteb">
+        <p>datos de la tarjeta</p>
+      
+        <div class="tarjeta">     
+
+                <div class="cabecera">
+                    <p>Golden card </p>
+                    <i class="fa-solid fa-money-bill-1 fa-3x"></i>
+                </div>
+                <div class="iconitos">
+                    <i class="fa-sharp fa-solid fa-sim-card fa-rotate-90 fa-2x"></i>
+                    <i class="fa-sharp fa-solid fa-wifi fa-2x"></i>
+                </div>
+                <div class="">
+                    <label>Numero de tarjeta</label>           
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Nombre del titular</label>    
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Fecha de vencimiento</label>    
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Codigo de seguridad</label>    
+                    <input type="text">
+                </div>
+       
+
+
+        </div>
+
+        
+    </div>
+           <!-- 
+    
+       
+        
+
+
+
+      
+
+        -->
+
+
+
+
+   
+
+
+</form>
+</div>
+
+
+ <script src="/pagina2/comprascripts.js"></script>
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 </html>
