@@ -8,6 +8,8 @@ msj = document.getElementById("mensaje");
 finfo = document.getElementById("idinfo");
 listcorreos = document.getElementById("listcorreos");
 
+
+
 let imgCarrusel = ["img1","img2","img3","img4"];
 let i = 0;
 init(); // establecer estado incial

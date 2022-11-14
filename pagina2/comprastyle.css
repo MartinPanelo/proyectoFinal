@@ -1,11 +1,12 @@
 * {
   margin: 0;
+  
   /*  color: white; */
-  /*  font-family: "Permanent Marker", cursive; */
+   font-family: "Permanent Marker", cursive;
 }
-/*   body {
-    background-color: rgb(39, 42, 49);
-  } */
+  body {
+     background-color:rgb(119, 119, 119);
+  }
 
 .sombrastilo1 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -35,35 +36,41 @@
 
 .vista{
     display:flex;
-    justify-content: center;
-    background-color:green;
+    flex-direction: column;
+  
+  /*   background-color:rgb(255, 122, 122); */
+  
 }
 .vista3d{
+  margin: 20px 0px 20px 0px;
  /*    width: 500px;
     height: 500px; */
-    background-color:blue;
+    background-color:rgb(119, 119, 119);
+  /*   border-radius:10px; */
     
 }
-model-viewer{
-    width: 100px;
-    height: 100px;
+.vista3d model-viewer{
+    width: 100%;
+    height: 400px;
 }
+
 
 .descripcion{
     
     display: flex;
     width: 100%;
-   
+  
    /*  height: 100px; */
     background-color:rgb(213, 80, 80);
+ 
 }
 .titulo{
-    display: flex;
-    justify-content: center;
-    background-color:violet;
+  /*   display: flex;
+    justify-content: center; */
+  /*   background-color:violet; */
 
     position: absolute;
-    top: 5px;
+    top: 25px;
     left: 50px;
 
 
@@ -72,9 +79,15 @@ model-viewer{
    /*  padding-left: 100px; */
 }
 .ladol{
-    position:relative;
+    display: flex;
     width: 30%;
-    padding-top: 70px;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+   /* 
+  
+    */
   /*   height: 100%; */
     background-color:rgb(177, 255, 183);
 }
@@ -85,50 +98,87 @@ model-viewer{
   
 }
 .items button{
-    margin: 0px 0px 15px 0px;
-    
+    margin: 0px 0px 20px 0px;
+
+    border-radius: 10px;
+    border: none;
+    padding:5px 10px 5px 10px;
+    cursor: pointer;
 /*     border: none;
 outline: none;
 background: none; */
 }
+.items button:hover{
+  background-color: aqua;
+}
 .items hr{
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 10px 0px;
     width: 50%;
    
 }
 .lador{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+   /*  justify-content: flex-end; */
+  /*   flex-direction: column; */
     width: 100%;
-    padding-top: 50px;
+    padding-top: 70px;
    /*  height: 100%; */
    /*  background-color:rgb(124, 80, 213); */
 }
-.lador img{
-    width: 100%;
-    height: 100%;
-}
+
 
 .foto{
     background-color:rgb(213, 208, 80);
     width: 400px;
-    height: 200px;
+    height:220px;
+}
+.foto model-viewer{
+  width: 100%;
+  height: 200px;
+}
+.foto em{
+  font-size: 10px;
+  padding-bottom: 0px;
 }
 .texto{
     background-color:rgb(80, 213, 197);
-    width: 100px;
+    width: 250px;
     margin: 10px 0px 10px 0px;
+    text-align: center;
    /*  height: 50px; */
 }
 
-.formulariodepago{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.areaformulario{
     background-color:rgb(255, 0, 230);
-  
+    padding: 20px 10px 20px 10px ;
 }
-.partea{
+.formulario{
     background-color:darkorange;
+    border-radius:20px;
+  /*   padding-bottom: 10px; */
+  
    /*  width: 100%; */
   /*   margin: 25px;
     padding: 20px; */
@@ -136,6 +186,51 @@ background: none; */
     justify-content: space-evenly;
    
 }
+.ladoizq div {
+
+  margin: 10px 0px 20px 0px;
+}
+.ladoder div {
+
+  margin: 10px 0px 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .parteb{
   display: flex;
   justify-content: center;
