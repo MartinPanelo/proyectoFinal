@@ -128,7 +128,7 @@ function formSuscribase(){
 
 function formContactenos(){
     let formContactenos = document.forms["formcontactenos"];
-    let tabla = document.getElementById("tabla");
+   // let tabla = document.getElementById("tabla");
     let banderin = true;
     for(let i=0; i<3;i++){
         formContactenos[i].classList.remove("error");
@@ -137,38 +137,38 @@ function formContactenos(){
   
     console.log(formContactenos.elements);
    
-    if(!formContactenos[0].value.match("[a-zA-Z ]{3,25}")){
+    if(!formContactenos["nombre"].value.match("[a-zA-Z ]{3,25}")){ //en vez de posicion 0 pisicion id
         banderin = false;
-        formContactenos[0].classList.add("error");
+        formContactenos["nombre"].classList.add("error");
     }else{
-        formContactenos[0].classList.add("valido");
+        formContactenos["nombre"].classList.add("valido");
     };
 
-    if(!formContactenos[1].value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,4}")){
+    if(!formContactenos["correo"].value.match("[a-zA-Z0-9-_]+\@[a-zA-Z]{3,8}\.[a-zA-Z]{2,4}")){
         banderin = false;
-        formContactenos[1].classList.add("error");
+        formContactenos["correo"].classList.add("error");
     }else{
-        formContactenos[1].classList.add("valido");
+        formContactenos["correo"].classList.add("valido");
     };
-    if(!formContactenos[2].value.match("[a-zA-Z0-9-_]{3,200}")){
+    if(!formContactenos["mensaje"].value.match("[a-zA-Z0-9-_]{3,200}")){
         banderin = false;
         console.log("el msj esta mal")
-        formContactenos[2].classList.add("error");
+        formContactenos["mensaje"].classList.add("error");
     }else{
         console.log("el msj esta bien")
-        formContactenos[2].classList.add("valido");
+        formContactenos["mensaje"].classList.add("valido");
     };
 
     if(banderin){
-        let tbody = document.createElement("tbody");
+        let tbody = document.getElementById("tabla");
         let item = document.createElement("tr");
         let col1 = document.createElement("td");
         let col2 = document.createElement("td");
         let col3 = document.createElement("td");
     
-        col1.innerText = formContactenos[0].value;
-        col2.innerText = formContactenos[1].value;
-        col3.innerText = formContactenos[2].value;
+        col1.innerText = formContactenos["nombre"].value;
+        col2.innerText = formContactenos["correo"].value;
+        col3.innerText = formContactenos["mensaje"].value;
     
         console.log(col1);
     
@@ -178,7 +178,7 @@ function formContactenos(){
     
         tbody.appendChild(item);
     
-        tabla.appendChild(tbody); 
+      //  tabla.appendChild(tbody); 
     }
    
 

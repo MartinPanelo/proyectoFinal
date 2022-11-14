@@ -75,7 +75,7 @@
       <div class="fila-item">
         <div class="item sombrastilo1">
           <div class="item-foto">
-            <img src="/assets/items/auto1.jpg" />
+            <img src="assets/items/auto1.jpg" />
           </div>
           <div class="item-descripcion">
             <h2>Shrimp-n</h2>
@@ -93,7 +93,7 @@
         </div>
         <div class="item sombrastilo1">
           <div class="item-foto">
-            <img src="/assets/items/auto2.jpg" />
+            <img src="assets/items/auto2.jpg" />
           </div>
           <div class="item-descripcion">
             <h2>Vampire Mobil</h2>
@@ -116,7 +116,7 @@
       <div class="fila-item">
         <div class="item sombrastilo1">
           <div class="item-foto">
-            <img src="/assets/items/auto3.jpg" />
+            <img src="assets/items/auto3.jpg" />
           </div>
           <div class="item-descripcion">
             <h2>Justicialista Gran Sport</h2>
@@ -136,7 +136,7 @@
         </div>
         <div class="item sombrastilo1">
           <div class="item-foto">
-            <img src="/assets/items/auto4.jpg" />
+            <img src="assets/items/auto4.jpg" />
            
           </div>
           <div class="item-descripcion">            
@@ -179,19 +179,19 @@
             <form name="formcontactenos" onsubmit="return formContactenos()"  autocomplete="off">
             <div class="campos-formularios">
               <div class="nombre sombrastilo1">               
-                <input placeholder="Nombre y Apellido" />
+                <input id="nombre" placeholder="Nombre y Apellido" />
 
                
                 
               </div>
               
               <div class="correo sombrastilo1">
-                <input placeholder="Direccion de correo" />
+                <input id="correo" placeholder="Direccion de correo" />
               </div>
               <div class="mensaje sombrastilo1">
                 
               
-                  <textarea placeholder="Comentenos!!" oninput='this.style.height = ""
+                  <textarea id="mensaje" placeholder="Comentenos!!" oninput='this.style.height = ""
                   this.style.height = this.scrollHeight + "px"'></textarea>
                 </div>
                <!--  -->
@@ -278,13 +278,19 @@
 
       </ul>
       <hr>
-      <table id="tabla">
-        <caption>Lista de "Contantenos"</caption><!-- ver como armar la estructura -->
-        <tr>
-          <td>Nombre</td>
-          <td>Correo</td>
-          <td>Mensaje</td>
-        </tr>
+
+
+      <table >
+        <caption>Lista de "Contantenos"</caption><!-- ver como armar la estructura -->        
+        <thead> 
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Mensaje</th>
+          </tr>
+        </thead>
+        <tbody id="tabla">
+        </tbody>
       </table>
      
       
