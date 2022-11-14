@@ -150,13 +150,13 @@ function formContactenos(){
     }else{
         formContactenos["correo"].classList.add("valido");
     };
-    if(!formContactenos["mensaje"].value.match("[a-zA-Z0-9-_]{3,200}")){
+    if(!formContactenos["mensajearea"].value.match("[a-zA-Z0-9-_]{3,200}")){
         banderin = false;
         console.log("el msj esta mal")
-        formContactenos["mensaje"].classList.add("error");
+        formContactenos["mensajearea"].classList.add("error");
     }else{
         console.log("el msj esta bien")
-        formContactenos["mensaje"].classList.add("valido");
+        formContactenos["mensajearea"].classList.add("valido");
     };
 
     if(banderin){
@@ -168,7 +168,7 @@ function formContactenos(){
     
         col1.innerText = formContactenos["nombre"].value;
         col2.innerText = formContactenos["correo"].value;
-        col3.innerText = formContactenos["mensaje"].value;
+        col3.innerText = formContactenos["mensajearea"].value;
     
         console.log(col1);
     
