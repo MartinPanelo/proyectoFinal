@@ -26,9 +26,11 @@
  -->
 
  <div class="vista">
-    <div class="vista3d">
+    <div class="vista3d sketchfab-embed-wrapper"><!-- 
         <model-viewer alt="" src="./../assets/pagina2/mimi/scene.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls  disable-zoom  touch-action="pan-y"></model-viewer>
-      
+       -->
+      <iframe title="Mimi" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/18666e063065441fac4393111e84f6a5/embed"> </iframe>
+
     </div>
     <em> Titulo: Mimi, Fuente:<a href="https://sketchfab.com/3d-models/mimi-18666e063065441fac4393111e84f6a5" Target="_blank">Link al modelo 3d</a>  Autor: animanyarty <a href="https://sketchfab.com/animanyarty" Target="_blank">Link al perfil</a></em>
  </div>
@@ -59,7 +61,6 @@
        <div class="foto">
            
         <model-viewer id="modeloparte" alt="" src="" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
-        <em> Titulo: Mimi, Fuente:<a href="https://sketchfab.com/3d-models/mimi-18666e063065441fac4393111e84f6a5" Target="_blank">Link al modelo 3d</a>  Autor: animanyarty <a href="https://sketchfab.com/animanyarty" Target="_blank">Link al perfil</a></em>
 
        </div>
       
@@ -69,17 +70,17 @@
 
 
 <div class="areaformulario">
- <form class="">
+ <form name="formcompra" onsubmit="return Compra()" class="">
 <div class="formulario">
    
     <div class="ladoizq">
             <div class="">
                 <label>Nombre</label><br>
-                <input type="text">
+                <input id="nombre" type="text">
             </div>
             <div class="">
                 <label>Fecha de nacimiento</label><br>
-                <input type="date" max="2099-12-31" min="1899-12-31" >
+                <input id="nacimiento" type="date" max="2099-12-31" min="1899-12-31" >
             </div>
             <div> 
                 <label>Pais</label>
@@ -90,17 +91,6 @@
                     <option value="Krakozhia">Krakozhia</option>
                 </select>
             </div>
-            <div class="">
-                <label>Ciudad</label>
-                <select id="ciudad" name="ciudad">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
-
-
     </div>
 
 
@@ -114,11 +104,11 @@
     <div class="ladoder">
             <div class="">
                 <label>Apellido</label><br>
-                <input type="text">
+                <input id="apellido" type="text">
             </div>
             <div class="">
                 <label>Nro de telefono</label><br>
-                <input type="text">
+                <input id="telefono" type="text">
             </div>
             <div class="">
                 <p>Version</p>
@@ -165,7 +155,7 @@
 
        
     </div>
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
     </div>
 
 
