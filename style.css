@@ -469,7 +469,6 @@ input[type="checkbox"] {
   box-shadow: -3px 0px 0px #fe5e3c;
 }
 .subcribir input {
-    
   /*  font-size:15px; */
   border: 0px;
   padding: 0px;
@@ -655,11 +654,10 @@ input[type="checkbox"] {
   bottom: 10px;
 }
 .envios button {
-     color:rgb(0, 0, 0);
-    border-radius: 10px;
-    cursor: pointer;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
 }
-
 
 .info {
   position: fixed;

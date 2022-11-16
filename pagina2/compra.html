@@ -1,205 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="comprastyle.css" />
     <script src="https://kit.fontawesome.com/fc73908a79.js" crossorigin="anonymous"></script>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area de Compra</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="navbar-logo sombrastilo1">
-        <img src="./../assets/LogoL.png" />
-        <p>Luxory</p>
-        <img src="./../assets/LogoR.png" />
-      </div>
-  
-
-   <!-- Import the component -->
-
-
-<!-- Use it like any other HTML element --><!-- 
-<model-viewer alt="" src="/assets/pagina2/model.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
- -->
-
- <div class="vista">
-    <div class="vista3d sketchfab-embed-wrapper"><!-- 
-        <model-viewer alt="" src="./../assets/pagina2/mimi/scene.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls  disable-zoom  touch-action="pan-y"></model-viewer>
-       -->
-      <iframe title="Mimi" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/18666e063065441fac4393111e84f6a5/embed"> </iframe>
-
+      <img src="./../assets/LogoL.png" />
+      <p>Luxory</p>
+      <img src="./../assets/LogoR.png" />
     </div>
-    <em> Titulo: Mimi, Fuente:<a href="https://sketchfab.com/3d-models/mimi-18666e063065441fac4393111e84f6a5" Target="_blank">Link al modelo 3d</a>  Autor: animanyarty <a href="https://sketchfab.com/animanyarty" Target="_blank">Link al perfil</a></em>
- </div>
 
- 
- <div class="descripcion">
-    <div class="ladol">
+    <div class="vista">
+      <div class="vista3d sketchfab-embed-wrapper">
+        <iframe
+          title="Mimi"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src="https://sketchfab.com/models/18666e063065441fac4393111e84f6a5/embed">
+        </iframe>
+      </div>
+      <em>
+        Titulo: Mimi, Fuente:<a href="https://sketchfab.com/3d-models/mimi-18666e063065441fac4393111e84f6a5" target="_blank">Link al modelo 3d</a>
+        Autor: animanyarty <a href="https://sketchfab.com/animanyarty" target="_blank">Link al perfil</a></em>
+    </div>
+
+    <div class="descripcion">
+      <div class="ladol">
         <div class="titulo">
-            
-            <h2> Una declaración de deportividad:
-                El Mini car.</h2>
+          <h2>Una declaración de deportividad: El Mini car.</h2>
         </div>
         <div class="items">
-            <button onclick="seteardescripcion('motor')">Motor</button>     
-            <hr>       
-            <button onclick="seteardescripcion('asiento')">Asiento</button>
-            <hr>   
-            <button onclick="seteardescripcion('rueda')">Rueda</button> 
+          <button onclick="seteardescripcion('motor')">Motor</button>
+          <hr />
+          <button onclick="seteardescripcion('asiento')">Asiento</button>
+          <hr />
+          <button onclick="seteardescripcion('rueda')">Rueda</button>
         </div>
-        <ul>
-           
-        </ul>
-    </div>
-    <div class="lador">
+        <ul></ul>
+      </div>
+      <div class="lador">
         <div class="texto">
-            <p id="des"></p>
+          <p id="des"></p>
         </div>
-       <div class="foto">
-           
-        <model-viewer id="modeloparte" alt="" src="" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
-
-       </div>
-      
+        <div class="foto">
+          <model-viewer
+            id="modeloparte"
+            alt=""
+            src=""
+            ar
+            environment-image=""
+            poster=""
+            shadow-intensity="2"
+            camera-controls
+            touch-action="pan-y"></model-viewer>
+        </div>
+      </div>
     </div>
 
- </div>
-
-
-<div class="areaformulario">
- <form name="formcompra" onsubmit="return Compra()" class="">
-<div class="formulario">
-   
-    <div class="ladoizq">
+    <div class="areaformulario">
+      <form name="formcompra" onsubmit="return Compra()" class="">
+        <div class="formulario">
+          <div class="ladoizq">
             <div class="">
-                <label>Nombre <span id="errornombre"></span></label><br>
-                <input id="nombre" type="text">
-                
+              <label>Nombre <span id="errornombre"></span></label><br />
+              <input id="nombre" type="text" />
             </div>
             <div class="">
-                <label>Fecha de nacimiento </label><br>
-                <input id="nacimiento" type="date" max="2099-12-31" min="1899-12-31" ><span id="errornac"></span>
-            </div>
-            <div> 
-                <label>Pais  </label>
-                <select id="pais" name="pais">
-                    <option disabled selected value> -- Seleccione un pais -- </option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Narnia">Narnia</option>
-                    <option value="Loompaland">Loompaland</option>
-                    <option value="Krakozhia">Krakozhia</option>
-                </select>
-                <br><span id="errorpais"></span>
-            </div>
-    </div>
-
-
-
-    <!--     <div>
-            <div class="">
-                <label>Apellido</label><br>
-                <input type="text">
-            </div> -->
-        
-    <div class="ladoder">
-            <div >
-                <label>Apellido<span id="errorapellido"></span></label><br>
-                <input id="apellido" type="text">
+              <label>Fecha de nacimiento </label><br />
+              <input id="nacimiento" type="date" max="2099-12-31" min="1899-12-31" /><span id="errornac"></span>
             </div>
             <div>
-                <label>Nro de telefono <span id="errortel"></span></label><br>
-                <input id="telefono" type="text">
+              <label>Pais </label>
+              <select id="pais" name="pais">
+                <option disabled selected value>-- Seleccione un pais --</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Narnia">Narnia</option>
+                <option value="Loompaland">Loompaland</option>
+                <option value="Krakozhia">Krakozhia</option>
+              </select>
+              <br /><span id="errorpais"></span>
+            </div>
+          </div>
+
+          <div class="ladoder">
+            <div>
+              <label>Apellido<span id="errorapellido"></span></label><br />
+              <input id="apellido" type="text" />
             </div>
             <div>
-                <p>Version <span id="errorversion"></span> </p>
-                <input type="radio"name="version" id="sport" value="sport">Sport
-                <input type="radio"name="version" id="lite" value="lite">Lite
-                <input type="radio"name="version" id="confort" value="confort">Confort
-                <br><span id="errorversion"></span>
+              <label>Nro de telefono <span id="errortel"></span></label><br />
+              <input id="telefono" type="text" />
             </div>
-           
-    </div>
+            <div>
+              <p>Version <span id="errorversion"></span></p>
+              <input type="radio" name="version" id="sport" value="sport" />Sport
+              <input type="radio" name="version" id="lite" value="lite" />Lite
+              <input type="radio" name="version" id="confort" value="confort" />Confort <br /><span id="errorversion"></span>
+            </div>
+          </div>
 
-    <div class="parteb">
-        <p>datos de la tarjeta</p>
-      
-        <div class="tarjeta">     
+          <div class="parteb">
+            <p>datos de la tarjeta</p>
 
-                <div class="cabecera">
-                    <p>Bank Golden chip </p>
-                    <i class="fa-solid fa-money-bill-1 fa-3x"></i>
-                </div>
-                <div class="iconitos">
-                    <i class="fa-sharp fa-solid fa-sim-card fa-rotate-90 fa-2x"></i>
-                    <i class="fa-sharp fa-solid fa-wifi fa-2x"></i>
-                </div>
-                <div class="inputnumero">
-                   <!--  <label>Numero de tarjeta</label>      -->      
-                    <input type="text" placeholder="Numero de tarjeta" id="nrotarjeta">
-                    
-                </div>
-               
-                <div class="inputnombrevencimiento">
-                    <!--  <label>Nombre del titular</label>     -->
-                     <input type="text"  placeholder="nombre del titular" id="nombretarjeta">
-                      <!--  <label>Fecha de vencimiento</label>     -->
-                     <input type="text" placeholder="YYYY" id="vencimientotarjeta">
-                 </div>
-              
+            <div class="tarjeta">
+              <div class="cabecera">
+                <p>Bank Golden chip</p>
+                <i class="fa-solid fa-money-bill-1 fa-3x"></i>
+              </div>
+              <div class="iconitos">
+                <i class="fa-sharp fa-solid fa-sim-card fa-rotate-90 fa-2x"></i>
+                <i class="fa-sharp fa-solid fa-wifi fa-2x"></i>
+              </div>
+              <div class="inputnumero">              
+                <input type="text" placeholder="Numero de tarjeta" id="nrotarjeta" />
+              </div>
 
-
-        </div>
-        
-       
-    </div>
-        <div class="btnform">
+              <div class="inputnombrevencimiento">               
+                <input type="text" placeholder="nombre del titular" id="nombretarjeta" />              
+                <input type="text" placeholder="YYYY" id="vencimientotarjeta" />
+              </div>
+            </div>
+          </div>
+          <div class="btnform">
             <button type="submit">Enviar</button>
+          </div>
         </div>
-      
+      </form>
     </div>
 
+    <div class="envios">
+      <button class="" onclick="mostarDatos()">Envios</button>
+    </div>
 
-
-
-
-   
-
-
-</form>
-</div>
-
-
-<div class="envios">
-    <button class="" onclick="mostarDatos()">Envios</button>
-  </div>
-
-
-  <div class="info" id="idinfo">
-  <table>
-    <caption>Ficha de compradores"</caption><!-- ver como armar la estructura -->        
-    <thead> 
-      <tr>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Nro de telefono</th>
-        <th>Fecha de nacimiento</th>
-        <th>Pais</th>
-        <th>Version</th>
-        <th>Nro de tarjeta</th>
-        <th>NNombre de titular</th>
-        <th>vencimineto de tarjeta</th>
-      </tr>
-    </thead>
-    <tbody id="tabla">
-    </tbody>
-  </table>
-
-  </div>
-
- <script src="comprascripts.js"></script>
- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</body>
+    <div class="info" id="idinfo">
+      <table>
+        <caption>
+          Ficha de compradores"
+        </caption>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Nro de telefono</th>
+            <th>Fecha de nacimiento</th>
+            <th>Pais</th>
+            <th>Version</th>
+            <th>Nro de tarjeta</th>
+            <th>NNombre de titular</th>
+            <th>vencimineto de tarjeta</th>
+          </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>
+    <a class="volver" href="./..">Volver</a>
+    <script src="comprascripts.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
 </html>

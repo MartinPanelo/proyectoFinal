@@ -66,22 +66,22 @@ function Compra() {
   if (!formCompra["nombre"].value.match("[a-zA-Z ]") || formCompra["nombre"].value == "") {
     flag = false;
     errornombre.innerText = " --¡¡Error!!--";
-    //PONER UN CARTEL DEBAJO DEL INPUT DICIENDO ERROR
+   
   }
   if (!formCompra["apellido"].value.match("[a-zA-Z ]") || formCompra["apellido"].value == "") {
     errorapellido.innerText = " --¡¡Error!!--";
     flag = false;
-    //PONER UN CARTEL DEBAJO DEL INPUT DICIENDO ERROR
+   
   }
   if (!formCompra["telefono"].value.match("[0-9]") || formCompra["telefono"].value == "") {
     errortel.innerText = " --¡¡Error!!-";
     flag = false;
-    //PONER UN CARTEL DEBAJO DEL INPUT DICIENDO ERROR
+  
   }
   if (!paises.includes(formCompra["pais"].value)) {
     errorpais.innerText = "Seleccione un pais";
     flag = false;
-    //PONER UN CARTEL DEBAJO DEL INPUT DICIENDO ERROR
+  
   }
   /* console.log(date.getFullYear() +" / "+ (date.getMonth()+1)+" / "+ date.getDate()); */
   if (formCompra["nacimiento"].value == "") {
@@ -92,7 +92,6 @@ function Compra() {
     flag = false;
   }
   if (!formCompra["sport"].checked && !formCompra["lite"].checked && !formCompra["confort"].checked) {
-    //seleeciones una version
     errorversion.innerText = " Seleccione una version";
     flag = false;
   }
@@ -106,7 +105,6 @@ function Compra() {
   if (!formCompra["nombretarjeta"].value.match("[a-zA-Z ]") || formCompra["nombretarjeta"].value == "") {
     flag = false;
     nombretarjeta.classList.add("error");
-    //PONER UN CARTEL DEBAJO DEL INPUT DICIENDO ERROR
   } else {
     nombretarjeta.classList.add("valido");
   }
@@ -154,16 +152,16 @@ function tabladecompradores() {
   col3.innerText = formCompra["telefono"].value;
   col4.innerText = formCompra["nacimiento"].value;
   col5.innerText = formCompra["pais"].value;
-  if(formCompra["sport"].checked){
-    col6.innerText = formCompra["sport"].value;//version
+  if (formCompra["sport"].checked) {
+    col6.innerText = formCompra["sport"].value; //version
   }
-  if(formCompra["confort"].checked){
-    col6.innerText = formCompra["confort"].value;//version
+  if (formCompra["confort"].checked) {
+    col6.innerText = formCompra["confort"].value; //version
   }
-  if(formCompra["lite"].checked){
-    col6.innerText = formCompra["lite"].value;//version
+  if (formCompra["lite"].checked) {
+    col6.innerText = formCompra["lite"].value; //version
   }
-  
+
   col7.innerText = formCompra["nrotarjeta"].value;
   col8.innerText = formCompra["nombretarjeta"].value;
   col9.innerText = formCompra["vencimientotarjeta"].value;
@@ -177,5 +175,4 @@ function tabladecompradores() {
   item.appendChild(col8);
   item.appendChild(col9);
   tbody.appendChild(item);
-
 }
