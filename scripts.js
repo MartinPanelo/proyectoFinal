@@ -4,7 +4,7 @@ catalogo = document.getElementById("categ");
 lista = document.getElementById("lista");
 logo2 = document.getElementById("logo-2");
 imgC =  document.getElementById("idCarrusel");
-msj = document.getElementById("mensaje");
+/* msj = document.getElementById("mensaje"); */
 finfo = document.getElementById("idinfo");
 listcorreos = document.getElementById("listcorreos");
 
@@ -190,7 +190,7 @@ function formContactenos(){
 
 
 
-function mostarDatos(msj){
+function mostarDatos(){
     if(finfo.style.display == "block"){
         finfo.style.display = "none"
         console.log("no se ve")

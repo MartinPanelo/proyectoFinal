@@ -75,21 +75,24 @@
    
     <div class="ladoizq">
             <div class="">
-                <label>Nombre</label><br>
+                <label>Nombre <span id="errornombre"></span></label><br>
                 <input id="nombre" type="text">
+                
             </div>
             <div class="">
-                <label>Fecha de nacimiento</label><br>
-                <input id="nacimiento" type="date" max="2099-12-31" min="1899-12-31" >
+                <label>Fecha de nacimiento </label><br>
+                <input id="nacimiento" type="date" max="2099-12-31" min="1899-12-31" ><span id="errornac"></span>
             </div>
             <div> 
-                <label>Pais</label>
+                <label>Pais  </label>
                 <select id="pais" name="pais">
+                    <option disabled selected value> -- Seleccione un pais -- </option>
                     <option value="Argentina">Argentina</option>
                     <option value="Narnia">Narnia</option>
                     <option value="Loompaland">Loompaland</option>
                     <option value="Krakozhia">Krakozhia</option>
                 </select>
+                <br><span id="errorpais"></span>
             </div>
     </div>
 
@@ -102,19 +105,20 @@
             </div> -->
         
     <div class="ladoder">
-            <div class="">
-                <label>Apellido</label><br>
+            <div >
+                <label>Apellido<span id="errorapellido"></span></label><br>
                 <input id="apellido" type="text">
             </div>
-            <div class="">
-                <label>Nro de telefono</label><br>
+            <div>
+                <label>Nro de telefono <span id="errortel"></span></label><br>
                 <input id="telefono" type="text">
             </div>
-            <div class="">
-                <p>Version</p>
-                <input type="radio"name="version" >Sport
-                <input type="radio"name="version" >Lite
-                <input type="radio"name="version" >Confort
+            <div>
+                <p>Version <span id="errorversion"></span> </p>
+                <input type="radio"name="version" id="sport" value="sport">Sport
+                <input type="radio"name="version" id="lite" value="lite">Lite
+                <input type="radio"name="version" id="confort" value="confort">Confort
+                <br><span id="errorversion"></span>
             </div>
            
     </div>
@@ -125,37 +129,36 @@
         <div class="tarjeta">     
 
                 <div class="cabecera">
-                    <p>Golden card </p>
+                    <p>Bank Golden chip </p>
                     <i class="fa-solid fa-money-bill-1 fa-3x"></i>
                 </div>
                 <div class="iconitos">
                     <i class="fa-sharp fa-solid fa-sim-card fa-rotate-90 fa-2x"></i>
                     <i class="fa-sharp fa-solid fa-wifi fa-2x"></i>
                 </div>
-                <div class="">
-                    <label>Numero de tarjeta</label>           
-                    <input type="text">
+                <div class="inputnumero">
+                   <!--  <label>Numero de tarjeta</label>      -->      
+                    <input type="text" placeholder="Numero de tarjeta" id="nrotarjeta">
+                    
                 </div>
-                <div>
-                    <label>Nombre del titular</label>    
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Fecha de vencimiento</label>    
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Codigo de seguridad</label>    
-                    <input type="text">
-                </div>
-       
+               
+                <div class="inputnombrevencimiento">
+                    <!--  <label>Nombre del titular</label>     -->
+                     <input type="text"  placeholder="nombre del titular" id="nombretarjeta">
+                      <!--  <label>Fecha de vencimiento</label>     -->
+                     <input type="text" placeholder="YYYY" id="vencimientotarjeta">
+                 </div>
+              
 
 
         </div>
-
+        
        
     </div>
+        <div class="btnform">
             <button type="submit">Enviar</button>
+        </div>
+      
     </div>
 
 
@@ -168,6 +171,33 @@
 </form>
 </div>
 
+
+<div class="envios">
+    <button class="" onclick="mostarDatos()">Envios</button>
+  </div>
+
+
+  <div class="info" id="idinfo">
+  <table>
+    <caption>Ficha de compradores"</caption><!-- ver como armar la estructura -->        
+    <thead> 
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Nro de telefono</th>
+        <th>Fecha de nacimiento</th>
+        <th>Pais</th>
+        <th>Version</th>
+        <th>Nro de tarjeta</th>
+        <th>NNombre de titular</th>
+        <th>vencimineto de tarjeta</th>
+      </tr>
+    </thead>
+    <tbody id="tabla">
+    </tbody>
+  </table>
+
+  </div>
 
  <script src="comprascripts.js"></script>
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
