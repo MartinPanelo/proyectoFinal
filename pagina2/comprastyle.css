@@ -198,9 +198,11 @@ span {
 }
 .error {
   border-color: red;
+  border-width: 3px;
 }
 .valido {
   border-color: green;
+  border-width: 3px;
 }
 
 .envios {

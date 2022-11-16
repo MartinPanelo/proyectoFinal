@@ -97,18 +97,18 @@
 
           <div class="ladoder">
             <div>
-              <label>Apellido<span id="errorapellido"></span></label><br />
+              <label>Apellido<span id="errorapellido"></span></label><br>
               <input id="apellido" type="text" />
             </div>
             <div>
-              <label>Nro de telefono <span id="errortel"></span></label><br />
+              <label>Nro de telefono <span id="errortel"></span></label><br>
               <input id="telefono" type="text" />
             </div>
             <div>
               <p>Version <span id="errorversion"></span></p>
-              <input type="radio" name="version" id="sport" value="sport" />Sport
-              <input type="radio" name="version" id="lite" value="lite" />Lite
-              <input type="radio" name="version" id="confort" value="confort" />Confort <br /><span id="errorversion"></span>
+              <input type="radio" name="version" id="sport" value="sport" /><label for="sport">Sport</label>
+              <input type="radio" name="version" id="lite" value="lite" /><label for="lite">Lite</label>
+              <input type="radio" name="version" id="confort" value="confort" /><label for="confort">Confort</label> <br><span id="errorversion"></span>
             </div>
           </div>
 
@@ -135,12 +135,11 @@
             </div>
           </div>
           <div class="btnform">
-            <button type="submit">Enviar</button>
-          </div>
-        </div>
-      </form>
+            <button id="formenviado" type="submit">Enviar</button>           
+          </div>         
+        </div>        
+      </form>     
     </div>
-
     <div class="envios">
       <button class="" onclick="mostarDatos()">Envios</button>
     </div>

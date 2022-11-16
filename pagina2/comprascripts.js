@@ -9,6 +9,7 @@ errortel = document.getElementById("errortel");
 vencimientotarjeta = document.getElementById("vencimientotarjeta");
 nombretarjeta = document.getElementById("nombretarjeta");
 nrotarjeta = document.getElementById("nrotarjeta");
+formenviado = document.getElementById("formenviado");
 finfo = document.getElementById("idinfo");
 formCompra = document.forms["formcompra"];
 let caracteristicas = {
@@ -121,6 +122,11 @@ function Compra() {
 
   if (flag) {
     tabladecompradores();
+    formenviado.innerText = "El fomulario se envio correctamente";
+    formenviado.classList.add("valido");
+  }else{
+    formenviado.innerText = "El fomulario no se envio";
+    formenviado.classList.add("error");
   }
   return false;
 }
