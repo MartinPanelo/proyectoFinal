@@ -5,6 +5,7 @@ lista = document.getElementById("lista");
 logo2 = document.getElementById("logo-2");
 imgC = document.getElementById("idCarrusel");
 finfo = document.getElementById("idinfo");
+mjssubcribirse =  document.getElementById("mensaje");
 listcorreos = document.getElementById("listcorreos");
 
 let imgCarrusel = ["img1", "img2", "img3", "img4"];
@@ -61,7 +62,6 @@ function iratop() {
   });
 }
 addEventListener("scroll", function () {
-  console.log(barra.offsetTop);
   if (barra.offsetTop > 640) {
     btnT.style.display = "block";
     logo2.style.display = "block";
@@ -80,18 +80,14 @@ function formSuscribase() {
   inputSuscribase.classList.remove("error");
   inputSuscribase.classList.remove("valido");
   if (inputSuscribase.value.match("[a-zA-Z0-9-_]+@[a-zA-Z]{3,8}.[a-zA-Z]{2,4}")) {
-    console.log("es valido");
-    msj.innerHTML = "es valido";
+    mensaje.innerHTML = "es valido";
     let item = document.createElement("li");
     item.innerText = inputSuscribase.value;
     listcorreos.appendChild(item);
-    console.log(inputSuscribase.value);
     inputSuscribase.classList.add("valido");
   } else {
-    console.log("NO es valido");
-    msj.innerHTML = "NO es valido";
+    mensaje.innerHTML = "NO es valido";
     inputSuscribase.classList.add("error");
-    console.log(inputSuscribase.value);
   }
 
   return false;
@@ -104,8 +100,6 @@ function formContactenos() {
     formContactenos[i].classList.remove("error");
     formContactenos[i].classList.remove("valido");
   }
-
-  console.log(formContactenos.elements);
 
   if (!formContactenos["nombre"].value.match("[a-zA-Z ]{3,25}")) {
     //en vez de posicion 0 pisicion id
@@ -123,10 +117,8 @@ function formContactenos() {
   }
   if (!formContactenos["mensajearea"].value.match("[a-zA-Z0-9-_]{3,200}")) {
     banderin = false;
-    console.log("el msj esta mal");
     formContactenos["mensajearea"].classList.add("error");
   } else {
-    console.log("el msj esta bien");
     formContactenos["mensajearea"].classList.add("valido");
   }
 
@@ -141,8 +133,6 @@ function formContactenos() {
     col2.innerText = formContactenos["correo"].value;
     col3.innerText = formContactenos["mensajearea"].value;
 
-    console.log(col1);
-
     item.appendChild(col1);
     item.appendChild(col2);
     item.appendChild(col3);
@@ -156,9 +146,7 @@ function formContactenos() {
 function mostarDatos() {
   if (finfo.style.display == "block") {
     finfo.style.display = "none";
-    console.log("no se ve");
   } else {
-    console.log("se ve");
     finfo.style.display = "block";
   }
 }
