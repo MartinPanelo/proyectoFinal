@@ -14,13 +14,13 @@ formCompra = document.forms["formcompra"];
 let caracteristicas = {
   motor:
     "Su avanzado motor de hidrogeno le permite tener la misma autonomía que un coche convencional sin necesidad de enchufarse y con cero emisiones contaminantes",
-  motormodelo: "/assets/pagina2/motor/scene.gltf",
+  motormodelo: "./../assets/pagina2/motor/scene.gltf",
   asiento:
     "Tienen un respaldo confortable que se adapta a la curvatura de la espalda formando una suave y sutil ese, la cual imita la forma de la columna vertebral humana.",
-  asientormodelo: "/assets/pagina2/mimi/asiento.glb",
+  asientormodelo: "./../assets/pagina2/mimi/asiento.glb",
   rueda:
     "Neumático para todas las estaciones del año que posee un innovador compuesto en la banda de rodamiento para un excelente agarre en cualquier tipo de suelo y un rodar silencioso.",
-  ruedamodelo: "/assets/pagina2/mimi/rueda.glb",
+  ruedamodelo: "./../assets/pagina2/mimi/rueda.glb",
 };
 let paises = ["Argentina", "Narnia", "Loompaland", "Krakozhia"];
 init();
@@ -127,10 +127,8 @@ function Compra() {
 
 function mostarDatos(msj) {
   if (finfo.style.display == "block") {
-    finfo.style.display = "none";
-    console.log("no se ve");
+    finfo.style.display = "none";    
   } else {
-    console.log("se ve");
     finfo.style.display = "block";
   }
 }
