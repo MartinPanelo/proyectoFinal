@@ -37,23 +37,17 @@ body {
   height: 75%;
   padding-top: 7px;
 }
-
+.rueda{
+  margin-top:30px;
+}
 .rueda img {
   float: left;
   shape-image-threshold: 0;
   -webkit-shape-outside: circle();
-  shape-outside: circle();
+  shape-outside: circle(); 
   width: 450px;
-  height: 100%;
-  margin-top: 30px;
+  margin-right: 25px;
 }
-
-.circle {
-  width: 450px;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}
-
 .introduccion {
   margin-top: 50px;
 }

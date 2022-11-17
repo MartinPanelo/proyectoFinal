@@ -190,6 +190,8 @@ a {
 .btnform {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 span {
@@ -204,7 +206,14 @@ span {
   border-color: green;
   border-width: 3px;
 }
-
+.errorenvio {
+  background-color: red;
+  
+}
+.validoenvio {
+  background-color: green;
+  
+}
 .envios {
   position: fixed;
   left: 10px;

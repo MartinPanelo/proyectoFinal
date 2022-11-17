@@ -61,6 +61,8 @@ function Compra() {
   nombretarjeta.classList.remove("error");
   vencimientotarjeta.classList.remove("valido");
   vencimientotarjeta.classList.remove("error");
+  formenviado.classList.remove("errorenvio");
+  formenviado.classList.remove("validoenvio");
   let nacimiento = new Date(`${formCompra["nacimiento"].value}T00:00`);
   let datahoy = new Date();
 
@@ -123,10 +125,10 @@ function Compra() {
   if (flag) {
     tabladecompradores();
     formenviado.innerText = "El fomulario se envio correctamente";
-    formenviado.classList.add("valido");
+    formenviado.classList.add("validoenvio");
   }else{
     formenviado.innerText = "El fomulario no se envio";
-    formenviado.classList.add("error");
+    formenviado.classList.add("errorenvio");
   }
   return false;
 }
