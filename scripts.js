@@ -101,7 +101,7 @@ function formContactenos() {
     formContactenos[i].classList.remove("valido");
   }
 
-  if (!formContactenos["nombre"].value.match("[a-zA-Z ]{3,25}")) {
+  if (!formContactenos["nombre"].value.match("[a-zA-Z\u00f1\u00d1 ]{3,25}")) {
     //en vez de posicion 0 pisicion id
     banderin = false;
     formContactenos["nombre"].classList.add("error");
